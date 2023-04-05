@@ -30,3 +30,14 @@ stat -c %a foo.txt
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
+
+# go
+
+#### get go
+```bash
+# https://go.dev/doc/install
+# wget tar_from_https://go.dev/doc/install
+sudo ln -s /usr/local/go/bin/go /usr/bin/go
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.3.linux-amd64.tar.gz
+#sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.3.linux-amd64.tar.gz
+```
