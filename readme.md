@@ -23,3 +23,10 @@ s6-svc -r /run/service/svc-openssh-server
 ```bash
 stat -c %a foo.txt
 ```
+
+# docker
+#### get docker
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
