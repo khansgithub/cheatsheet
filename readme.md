@@ -43,3 +43,10 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.3.linux-amd64.tar.gz
 sudo ln -s /usr/local/go/bin/go /usr/bin/go
 #sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.3.linux-amd64.tar.gz
 ```
+
+# linux
+
+#### list all listening ports and associated services
+```bash
+sudo netstat -tunlp
+```
