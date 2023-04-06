@@ -17,13 +17,6 @@ ls /run/service/
 s6-svc -r /run/service/svc-openssh-server
 ```
 
-# etc
-
-#### get umask
-```bash
-stat -c %a foo.txt
-```
-
 # docker
 #### get docker
 ```bash
@@ -31,6 +24,12 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
 newgrp docker
+```
+### troubleshooting
+#### Error response from daemon: client version 1.40 is too new...
+```bash
+# set to working version
+DOCKER_API_VERSION=1.41
 ```
 
 # go
@@ -50,3 +49,9 @@ sudo ln -s /usr/local/go/bin/go /usr/bin/go
 ```bash
 sudo netstat -tunlp
 ```
+
+#### get umask
+```bash
+stat -c %a foo.txt
+```
+
