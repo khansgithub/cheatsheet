@@ -28,6 +28,12 @@ newgrp docker
 # set to working version
 DOCKER_API_VERSION=1.41
 ```
+# python
+#### interactive pdb
+```python
+import ipdb
+ipdb.set_trace()
+```
 
 # go
 #### get go
