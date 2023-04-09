@@ -1,17 +1,14 @@
 # git
-
 #### switch user and choose which shell to use
 ```bash
-su -s /bin/bash git
+su -s /bin/bash <user>
 ```
 
 # s6
-
 #### list services
 ```bash
 ls /run/service/
 ```
-
 #### restart service
 ```bash
 s6-svc -r /run/service/svc-openssh-server
@@ -33,7 +30,6 @@ DOCKER_API_VERSION=1.41
 ```
 
 # go
-
 #### get go
 ```bash
 # https://go.dev/doc/install
@@ -44,14 +40,21 @@ sudo ln -s /usr/local/go/bin/go /usr/bin/go
 ```
 
 # linux
-
 #### list all listening ports and associated services
 ```bash
 sudo netstat -tunlp
 ```
-
 #### get umask
 ```bash
 stat -c %a foo.txt
 ```
 
+# tmux
+### basics
+```
+        new window - CTRL + b + c
+     switch window - CTRL + b + [0-9]+
+  vertical split | - CTRL + b + %
+ horizonal split _ - CTRL + b + "
+   navigate panels - CTRL + b + ↑ / ↓ / ← / →
+```
