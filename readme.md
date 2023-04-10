@@ -56,11 +56,24 @@ stat -c %a foo.txt
 ```
 
 # tmux
-### basics
+#### basics
 ```
         new window - CTRL + b + c
      switch window - CTRL + b + [0-9]+
   vertical split | - CTRL + b + %
  horizonal split _ - CTRL + b + "
    navigate panels - CTRL + b + ↑ / ↓ / ← / →
+```
+
+# redis
+```
+redis-cli
+```
+#### list keys
+```
+keys * 
+```
+#### read stream
+```
+xrange <key> - + 
 ```
