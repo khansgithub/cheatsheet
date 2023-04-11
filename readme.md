@@ -77,3 +77,8 @@ keys *
 ```
 xrange <key> - + 
 ```
+#### find keys and pipe to delete
+```
+#             < query >
+redis-cli keys rq:res* | awk '{print $1}' | xargs redis-cli del
+```
