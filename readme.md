@@ -82,3 +82,9 @@ xrange <key> - +
 #             < query >
 redis-cli keys rq:res* | awk '{print $1}' | xargs redis-cli del
 ```
+
+# curl
+#### pass file to curl as data
+```
+curl localhost:3000/workflow -X POST  -H 'Content-Type: application/json' --data-binary "@data.json"
+```
