@@ -41,6 +41,35 @@ DOCKER_API_VERSION=1.41
 import ipdb
 ipdb.set_trace()
 ```
+#### module structure
+_https://ianhopkinson.org.uk/2022/02/understanding-setup-py-setup-cfg-and-pyproject-toml-in-python/_
+```
+├── README
+├── pyproject.toml
+├── setup.py
+└── src
+    └── foobar
+        └── __init__.py
+```
+##### pyproject.toml
+```
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+```
+##### setup.py
+```python
+#! /usr/bin/env python
+
+from setuptools import setup
+
+if __name__ == "__main__":
+    setup()
+```
+#### install module develop mode
+```bash
+pip install --editable .
+```
 
 # go
 #### get go
