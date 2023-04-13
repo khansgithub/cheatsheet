@@ -3,6 +3,13 @@
 ```bash
 su -s /bin/bash <user>
 ```
+#### credential cache helper
+```bash
+git config --global credential.helper cache
+git config --local credential.helper cache
+
+git config --global --unset credential.helper
+```
 
 # s6
 #### list services
