@@ -35,6 +35,7 @@ newgrp docker
 # set to working version
 DOCKER_API_VERSION=1.41
 ```
+
 # python
 #### interactive pdb
 ```python
@@ -69,6 +70,7 @@ if __name__ == "__main__":
 #### install module develop mode
 ```bash
 pip install --editable .
+pip install -e .
 ```
 
 # go
