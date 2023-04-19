@@ -29,6 +29,11 @@ sh get-docker.sh
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+
+#### list containers by name
+```shell
+docker ps -a --format "{{.Names}}"
+```
 ### troubleshooting
 #### Error response from daemon: client version 1.40 is too new...
 ```bash
