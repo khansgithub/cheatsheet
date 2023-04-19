@@ -29,10 +29,17 @@ sh get-docker.sh
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-
 #### list containers by name
 ```shell
 docker ps -a --format "{{.Names}}"
+```
+#### basic health check 
+```shell
+docker run \
+    ...
+    --health-cmd "set -e;  nc -zv localhost 22; if [ $? -eq 0 ]; then exit 0; else exit 1; fi" \
+    --health-interval=10s 
+    ...
 ```
 ### troubleshooting
 #### Error response from daemon: client version 1.40 is too new...
