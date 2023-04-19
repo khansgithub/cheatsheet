@@ -114,6 +114,16 @@ stat -c %a foo.txt
  horizonal split _ - CTRL + b + "
    navigate panels - CTRL + b + ↑ / ↓ / ← / →
 ```
+### rename window / pane
+#### window
+```
+CTRL + B + ,
+```
+#### pane
+```
+CTRL + B + :
+select-pane -T <PANE NAME>
+```
 
 # redis
 ```
