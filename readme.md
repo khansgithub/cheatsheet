@@ -10,6 +10,10 @@ git config --local credential.helper cache
 
 git config --global --unset credential.helper
 ```
+#### disable credential helper for single command
+```bash
+git clone https://bitbucket.org/<repo>.git --config credential.helper=
+```
 
 # s6
 #### list services
