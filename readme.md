@@ -51,6 +51,14 @@ docker run \
 # set to working version
 DOCKER_API_VERSION=1.41
 ```
+### etc
+#### docker ps name and status format
+```
+docker ps --format "{{printf \"%-30s %-20s\" .Names .Status}}"
+```
+```
+watch 'docker ps --format "{{printf \"%-30s %-20s\" .Names .Status}}"'
+```
 
 # python
 #### interactive pdb
