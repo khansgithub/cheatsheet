@@ -61,6 +61,17 @@ watch 'docker ps --format "{{printf \"%-30s %-20s\" .Names .Status}}"'
 ```
 
 # python
+#### monkeytype add type hints
+```
+# foo.py
+import foo.bar
+foo.bar.foobar()
+```
+```
+monkeytype run foo.py
+...
+monkeytype apply foo.bar
+```
 #### interactive pdb
 ```python
 import ipdb
